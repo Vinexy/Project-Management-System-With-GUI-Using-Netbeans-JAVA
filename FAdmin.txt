@@ -1,0 +1,5 @@
+11000	Müdür	Ahmet	a	56	yönetim	12.023	0
+11001	MüdürY.	Mehmet	b	45	yönetim	10.546	1
+11002	CEO	Ayşe	c	38	yönetim	11.123	2
+11003	Üye1	Elif	d	42	yönetim	10.456	3
+11004	Üye2	Umut	e	65	yönetim	12.000	4

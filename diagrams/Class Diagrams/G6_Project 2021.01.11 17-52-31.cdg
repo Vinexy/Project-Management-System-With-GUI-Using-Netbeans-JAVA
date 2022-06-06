@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="G6_Project">
+  <ClassDiagramComponents>
+    <Class name="AbsProject" package="" visibility="publıc" isAbstract="true" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="GetFromFile" returnType="String" visibility="publıc" isStatic="true">
+          <Argument type="String" name="fileName"/>
+          <Argument type="String" name="searchid"/>
+        </Method>
+        <Method name="AddFile" returnType="String" visibility="publıc" isStatic="true">
+          <Argument type="String" name="fileName"/>
+          <Argument type="String" name="searchid"/>
+          <Argument type="String" name="Info"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AddEmployee" package="" visibility="publıc" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="emp" type="ProjectMember" visibility="package"/>
+        <Field name="obj3" type="ProjectMember" visibility="package"/>
+        <Field name="Panel_EmpInfo" type="javax.swing.JPanel" visibility="prıvate"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="lblInf" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="txtAge" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtDep" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtname_f2" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtsalary_f2" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtsurname_f2" type="javax.swing.JTextField" visibility="prıvate"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="prıvate"/>
+        <Method name="txtAgeActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txtsalary_f2ActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="publıc" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Administration" package="" visibility="publıc" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="adminNum" type="int" visibility="package"/>
+        <Field name="Job" type="String" visibility="prıvate"/>
+        <Field name="adminList" type="ArrayList&lt;Administration&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+        <Constructor visibility="publıc">
+          <Argument type="String" name="Job"/>
+          <Argument type="int" name="employeeId"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="department"/>
+          <Argument type="float" name="salary"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+        <Method name="getAdminNum" returnType="int" visibility="publıc"/>
+        <Method name="getAdminList" returnType="ArrayList&lt;Administration&gt;" visibility="publıc"/>
+        <Method name="SearchAdmin" returnType="String" visibility="publıc">
+          <Argument type="String" name="searchid"/>
+        </Method>
+        <Method name="ReadFile" returnType="void" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="CompanyInfos" package="" visibility="publıc" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="strComp" type="String" visibility="package"/>
+        <Field name="x" type="int" visibility="package" isStatic="true"/>
+        <Field name="obj1" type="Project" visibility="package"/>
+        <Field name="obj2" type="Administration" visibility="package"/>
+        <Field name="obj3" type="ProjectMember" visibility="package"/>
+        <Field name="cbox1" type="javax.swing.JCheckBox" visibility="prıvate"/>
+        <Field name="cbox2" type="javax.swing.JCheckBox" visibility="prıvate"/>
+        <Field name="cbox3" type="javax.swing.JCheckBox" visibility="prıvate"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="prıvate"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="prıvate"/>
+        <Field name="textArea" type="javax.swing.JTextArea" visibility="prıvate"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="prıvate"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="publıc" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Create_Project" package="" visibility="publıc" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="member" type="ProjectMember" visibility="package"/>
+        <Field name="i" type="int" visibility="package"/>
+        <Field name="obj1" type="Project" visibility="package"/>
+        <Field name="obj3" type="ProjectMember" visibility="package"/>
+        <Field name="BtnAddEmp" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="Panel_Createproject" type="javax.swing.JPanel" visibility="prıvate"/>
+        <Field name="but_back3" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="prıvate"/>
+        <Field name="lblNote" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="spinner" type="javax.swing.JSpinner" visibility="prıvate"/>
+        <Field name="txtEmpID" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txt_Budget" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txt_DueDAte" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txt_ProjectManagerID" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txt_StateDate" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txt_newprojectID" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txt_newprojectname" type="javax.swing.JTextField" visibility="prıvate"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="prıvate"/>
+        <Method name="txt_ProjectManagerIDActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="but_back3ActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="BtnAddEmpActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="publıc" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Employee" package="" visibility="publıc" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="memberNum" type="int" visibility="package" isStatic="true"/>
+        <Field name="employeeId" type="int" visibility="prıvate"/>
+        <Field name="name" type="String" visibility="prıvate"/>
+        <Field name="sname" type="String" visibility="prıvate"/>
+        <Field name="age" type="int" visibility="prıvate"/>
+        <Field name="department" type="String" visibility="prıvate"/>
+        <Field name="salary" type="float" visibility="prıvate"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+        <Constructor visibility="publıc">
+          <Argument type="int" name="employeeId"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="department"/>
+          <Argument type="float" name="salary"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setEmployeeId" returnType="void" visibility="publıc">
+          <Argument type="int" name="employeeId"/>
+        </Method>
+        <Method name="setName" returnType="void" visibility="publıc">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setSname" returnType="void" visibility="publıc">
+          <Argument type="String" name="sname"/>
+        </Method>
+        <Method name="setAge" returnType="void" visibility="publıc">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="setDepartment" returnType="void" visibility="publıc">
+          <Argument type="String" name="department"/>
+        </Method>
+        <Method name="setSalary" returnType="void" visibility="publıc">
+          <Argument type="float" name="salary"/>
+        </Method>
+        <Method name="getEmployeeId" returnType="int" visibility="publıc"/>
+        <Method name="getName" returnType="String" visibility="publıc"/>
+        <Method name="getSname" returnType="String" visibility="publıc"/>
+        <Method name="getAge" returnType="int" visibility="publıc"/>
+        <Method name="getDepartment" returnType="String" visibility="publıc"/>
+        <Method name="getSalary" returnType="float" visibility="publıc"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="Employee_InfoFrame" package="" visibility="publıc" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="str" type="String" visibility="package"/>
+        <Field name="Cimp" type="CompanyInfos" visibility="package"/>
+        <Field name="Panel_EmpInfo" type="javax.swing.JPanel" visibility="prıvate"/>
+        <Field name="Panel_Projectprocess" type="javax.swing.JPanel" visibility="prıvate"/>
+        <Field name="btnAddEmp" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="btnAddProject" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="btnCompany" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="btnSD" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="txtAge" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtDep" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtID_f2" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtInf" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtPro" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtname_f2" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtsalary_f2" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="txtsurname_f2" type="javax.swing.JTextField" visibility="prıvate"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="prıvate"/>
+        <Method name="txtAgeActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txtsalary_f2ActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnSDActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnAddProjectActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnAddEmpActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="txtID_f2ActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnCompanyActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="publıc" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="IProjectApp" package="" visibility="publıc" xPosition="2120.0" yPosition="20.0">
+      <Methods>
+        <Method name="ReadFile" returnType="void" visibility="publıc"/>
+      </Methods>
+    </Interface>
+    <Class name="Project" package="" visibility="publıc" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="projectNum" type="int" visibility="prıvate"/>
+        <Field name="projectId" type="int" visibility="prıvate"/>
+        <Field name="projectManagerId" type="int" visibility="prıvate"/>
+        <Field name="projectName" type="String" visibility="prıvate"/>
+        <Field name="startDate" type="String" visibility="prıvate"/>
+        <Field name="dueDate" type="String" visibility="prıvate"/>
+        <Field name="membernum" type="int" visibility="prıvate"/>
+        <Field name="budget" type="float" visibility="prıvate"/>
+        <Field name="expectedprofit" type="float" visibility="prıvate"/>
+        <Field name="progressstatus" type="int" visibility="prıvate"/>
+        <Field name="projectList" type="ArrayList&lt;Project&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+        <Constructor visibility="publıc">
+          <Argument type="int" name="projectId"/>
+          <Argument type="int" name="projectManagerId"/>
+          <Argument type="String" name="projectName"/>
+          <Argument type="String" name="startDate"/>
+          <Argument type="String" name="dueDate"/>
+          <Argument type="int" name="membernum"/>
+          <Argument type="float" name="budget"/>
+          <Argument type="float" name="expectedprofit"/>
+          <Argument type="int" name="progressstatus"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getProjectNum" returnType="int" visibility="publıc"/>
+        <Method name="SearchProject" returnType="String" visibility="publıc">
+          <Argument type="String" name="searchid"/>
+        </Method>
+        <Method name="getProjectList" returnType="ArrayList&lt;Project&gt;" visibility="publıc"/>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+        <Method name="DeleteFromFile" returnType="String" visibility="publıc" isStatic="true">
+          <Argument type="String" name="fileName"/>
+          <Argument type="String" name="searchid"/>
+        </Method>
+        <Method name="AddProject" returnType="String" visibility="publıc">
+          <Argument type="String" name="searchid"/>
+          <Argument type="String" name="Info"/>
+        </Method>
+        <Method name="ReadFile" returnType="void" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="ProjectMember" package="" visibility="publıc" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="memberNum" type="int" visibility="prıvate"/>
+        <Field name="projectId" type="String" visibility="prıvate"/>
+        <Field name="memberList" type="ArrayList&lt;ProjectMember&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+        <Constructor visibility="publıc">
+          <Argument type="String" name="projectId"/>
+          <Argument type="int" name="employeeId"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="sname"/>
+          <Argument type="int" name="age"/>
+          <Argument type="String" name="department"/>
+          <Argument type="float" name="salary"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMemberNum" returnType="int" visibility="publıc"/>
+        <Method name="getProjectId" returnType="String" visibility="publıc"/>
+        <Method name="setProjectId" returnType="void" visibility="publıc">
+          <Argument type="String" name="projectId"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="publıc"/>
+        <Method name="getMemberList" returnType="ArrayList&lt;ProjectMember&gt;" visibility="publıc"/>
+        <Method name="SearchMember" returnType="String" visibility="publıc">
+          <Argument type="String" name="searchid"/>
+        </Method>
+        <Method name="AddMember" returnType="String" visibility="publıc">
+          <Argument type="String" name="searchid"/>
+          <Argument type="String" name="Info"/>
+        </Method>
+        <Method name="UpdateMember" returnType="String" visibility="publıc">
+          <Argument type="String" name="fileName"/>
+          <Argument type="String" name="searchid"/>
+          <Argument type="String" name="Info"/>
+        </Method>
+        <Method name="ReadFile" returnType="void" visibility="publıc"/>
+      </Methods>
+    </Class>
+    <Class name="Project_Information" package="" visibility="publıc" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="projectInfo" type="Project" visibility="package"/>
+        <Field name="obj1" type="Project" visibility="package"/>
+        <Field name="Panel_ProjectInfo" type="javax.swing.JPanel" visibility="prıvate"/>
+        <Field name="TextArea" type="javax.swing.JTextArea" visibility="prıvate"/>
+        <Field name="but_clear" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="but_search" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="prıvate"/>
+        <Field name="txt_projectID" type="javax.swing.JTextField" visibility="prıvate"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="prıvate"/>
+        <Method name="but_searchActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="but_clearActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="publıc" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="StartFrame" package="" visibility="publıc" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="ID_text" type="javax.swing.JTextField" visibility="prıvate"/>
+        <Field name="enterscreen_button" type="javax.swing.JButton" visibility="prıvate"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="prıvate"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="prıvate"/>
+        <Field name="password_text" type="javax.swing.JPasswordField" visibility="prıvate"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="publıc"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="prıvate"/>
+        <Method name="enterscreen_buttonActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ID_textActionPerformed" returnType="void" visibility="prıvate">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="publıc" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="obj2" source="CompanyInfos" target="Administration" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="member" source="Create_Project" target="ProjectMember" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ProjectMember" target="ProjectMember" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="projectInfo" source="Project_Information" target="Project" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="emp" source="AddEmployee" target="ProjectMember" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Project" target="IProjectApp"/>
+    <HasRelation name="obj1" source="CompanyInfos" target="Project" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="obj1" source="Project_Information" target="Project" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Administration" target="Administration" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="projectList" source="Project" target="Project" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Project&gt;"/>
+    <HasRelation name="obj3" source="CompanyInfos" target="ProjectMember" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Project" target="Project" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ProjectMember" target="IProjectApp"/>
+    <IsRelation name="is" source="Administration" target="Employee"/>
+    <HasRelation name="adminList" source="Administration" target="Administration" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Administration&gt;"/>
+    <HasRelation name="Cimp" source="Employee_InfoFrame" target="CompanyInfos" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Administration" target="IProjectApp"/>
+    <IsRelation name="is" source="Employee" target="AbsProject"/>
+    <HasRelation name="memberList" source="ProjectMember" target="ProjectMember" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;ProjectMember&gt;"/>
+    <IsRelation name="is" source="ProjectMember" target="Employee"/>
+    <HasRelation name="obj1" source="Create_Project" target="Project" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Project" target="AbsProject"/>
+    <HasRelation name="obj3" source="AddEmployee" target="ProjectMember" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="obj3" source="Create_Project" target="ProjectMember" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
