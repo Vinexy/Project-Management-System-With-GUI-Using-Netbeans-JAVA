@@ -62,7 +62,7 @@ public class Create_Project extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Crate Project");
+        setTitle("Create Project");
 
         Panel_Createproject.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.white));
 
@@ -75,19 +75,19 @@ public class Create_Project extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 0, 0));
-        jLabel3.setText("New Project ID : ");
+        jLabel3.setText("New Project ID: ");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 0, 0));
-        jLabel4.setText("New Project Name : ");
+        jLabel4.setText("New Project Name: ");
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(102, 0, 0));
-        jLabel6.setText("Numbers of Employee :");
+        jLabel6.setText("Numbers of Employee:");
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(102, 0, 0));
-        jLabel7.setText("Project Manager ID (12...) : ");
+        jLabel7.setText("Project Manager ID: ");
 
         txt_ProjectManagerID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,21 +97,21 @@ public class Create_Project extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 0, 0));
-        jLabel8.setText("Due Date (../../...) :");
+        jLabel8.setText("Due Date (DD/MM/YYYY):");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 0, 0));
-        jLabel9.setText("Start Date (../../...) :");
+        jLabel9.setText("Start Date (DD/MM/YYYY):");
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(102, 0, 0));
-        jLabel10.setText("Budget : ");
+        jLabel10.setText("Budget: ");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Add Employee ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12), new java.awt.Color(0, 102, 153))); // NOI18N
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 51, 0));
-        jLabel5.setText("Employee ID (13...) :");
+        jLabel5.setText("Employee ID:");
 
         BtnAddEmp.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         BtnAddEmp.setForeground(new java.awt.Color(0, 102, 153));
@@ -132,7 +132,7 @@ public class Create_Project extends javax.swing.JFrame {
                     .addComponent(lblNote, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(BtnAddEmp, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 119, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txtEmpID, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -269,7 +269,7 @@ int i;
         gereken bilgiler satır halinde eklemeye hazır hale getirilir*/
         if(txt_ProjectManagerID.getText().equalsIgnoreCase("")||txt_DueDAte.getText().equalsIgnoreCase("")||txt_StateDate.getText().equalsIgnoreCase("")
         ||txt_Budget.getText().equalsIgnoreCase("")||txt_newprojectname.getText().equalsIgnoreCase("")||txt_newprojectID.getText().equalsIgnoreCase("")){
-            lblNote.setText("Enter All Informations !!!");
+            lblNote.setText("Enter All Information!");
         }else if( Integer.parseInt(str[0])<12999 && str[6].equalsIgnoreCase("-")){
             Info=txt_newprojectID.getText()+"\t"+txt_ProjectManagerID.getText()+"\t"+txt_newprojectname.getText()+"\t"
              +txt_StateDate.getText()+"\t"+txt_DueDAte.getText()+"\t"+spinner.getValue()+"\t"
@@ -278,7 +278,7 @@ int i;
             String message=project.AddProject(txt_newprojectID.getText(),Info);
             lblNote.setText(message); 
             
-            if(message.equalsIgnoreCase("added successfully !!!")){
+            if(message.equalsIgnoreCase("Added successfully!")){
                 //proje eklendikten sonra istenilen çalışanların eklenilebilmesi için BtnAddEmp açılır
                 BtnAddEmp.setEnabled(true);
                 //Yapılan değişiklikler ArrayListe aktarılır
@@ -290,13 +290,13 @@ int i;
             }
             
         }else{
-            lblNote.setText("You can't get this Project Manager !!!");
+            lblNote.setText("You can't get this Project Manager.");
         }
     }//GEN-LAST:event_but_back3ActionPerformed
     
     private void BtnAddEmpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAddEmpActionPerformed
         String message=member.SearchMember(txtEmpID.getText());
-        if(!message.equalsIgnoreCase("this id is not exist!!!") && !message.equalsIgnoreCase("This file is empty!!!")){
+        if(!message.equalsIgnoreCase("This ID does not exist!") && !message.equalsIgnoreCase("This file is empty!")){
             String[] str=message.split("\t");
         
             //Spinner da belirtilen çalışan sayısı doğrultusunda başka projesi olmayan çalışanlara proje bilgisi girilir
@@ -311,13 +311,13 @@ int i;
                     }
 
                 }else{
-                    lblNote.setText("You can't get this employee !!!");
+                    lblNote.setText("You can't get this employee.");
                 }
             }else if(i<=0){
                 BtnAddEmp.setEnabled(false);
-                lblNote.setText("You can't get employee more!!!");
+                lblNote.setText("You can't get this employee.");
             }else{
-                lblNote.setText("Enter a employee id!!!");
+                lblNote.setText("Enter an employee ID.");
             }
             
         }else {
