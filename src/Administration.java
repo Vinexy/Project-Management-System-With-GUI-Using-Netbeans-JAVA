@@ -48,7 +48,7 @@ public class Administration extends Employee implements IProjectApp{
     
    @Override
     public void ReadFile() throws FileNotFoundException, IOException{
-        //Admin dosyasını okuyarak bilgileri ArrayListe aktarmak için kullanılır
+        
         adminList.clear();
         String[] infos ;
         int i=0;

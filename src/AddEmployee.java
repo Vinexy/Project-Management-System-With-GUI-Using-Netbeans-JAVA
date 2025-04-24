@@ -53,7 +53,7 @@ public class AddEmployee extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Employee Infos");
+        jLabel1.setText("Employee Info");
         jLabel1.setToolTipText("");
         jLabel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -147,7 +147,7 @@ public class AddEmployee extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(0, 102, 153));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 102, 153));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("ADD");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -258,7 +258,7 @@ public class AddEmployee extends javax.swing.JFrame {
         lblInf.setText(emp.AddMember(Integer.toString(newId), Info));
         
         //eğer ekleme olursa yeni değişikliklerle beraber arrayListe aktarım yapılır
-        if(lblInf.getText().equalsIgnoreCase("added successfully !!!")){
+        if(lblInf.getText().equalsIgnoreCase("Added successfully!")){
             try {
                 obj3.ReadFile();
             } catch (IOException ex) {

@@ -10,7 +10,7 @@
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="2"/>
-    <Property name="title" type="java.lang.String" value="Crate Project"/>
+    <Property name="title" type="java.lang.String" value="Create Project"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -174,7 +174,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="66" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="New Project ID : "/>
+            <Property name="text" type="java.lang.String" value="New Project ID: "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_newprojectID">
@@ -187,7 +187,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="66" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="New Project Name : "/>
+            <Property name="text" type="java.lang.String" value="New Project Name: "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_newprojectname">
@@ -200,7 +200,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="66" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Numbers of Employee :"/>
+            <Property name="text" type="java.lang.String" value="Numbers of Employee:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
@@ -211,7 +211,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="66" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Project Manager ID (12...) : "/>
+            <Property name="text" type="java.lang.String" value="Project Manager ID: "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_ProjectManagerID">
@@ -227,7 +227,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="66" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Due Date (../../...) :"/>
+            <Property name="text" type="java.lang.String" value="Due Date (DD/MM/YYYY):"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_DueDAte">
@@ -240,7 +240,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="66" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Start Date (../../...) :"/>
+            <Property name="text" type="java.lang.String" value="Start Date (DD/MM/YYYY):"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_StateDate">
@@ -253,7 +253,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="66" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Budget : "/>
+            <Property name="text" type="java.lang.String" value="Budget: "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txt_Budget">
@@ -281,7 +281,7 @@
                           <Component id="lblNote" max="32767" attributes="0"/>
                           <Component id="BtnAddEmp" alignment="1" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel5" pref="111" max="32767" attributes="0"/>
+                              <Component id="jLabel5" pref="119" max="32767" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="txtEmpID" min="-2" pref="137" max="-2" attributes="0"/>
                           </Group>
@@ -316,7 +316,7 @@
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="33" red="66" type="rgb"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Employee ID (13...) :"/>
+                <Property name="text" type="java.lang.String" value="Employee ID:"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txtEmpID">

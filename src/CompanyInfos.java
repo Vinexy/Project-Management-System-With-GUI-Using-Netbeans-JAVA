@@ -44,16 +44,32 @@ public class CompanyInfos extends javax.swing.JFrame {
         jScrollPane1.setViewportView(textArea);
 
         cbox1.setText("Project Info");
+        cbox1.setMaximumSize(new java.awt.Dimension(100, 20));
+        cbox1.setMinimumSize(new java.awt.Dimension(100, 20));
 
-        cbox2.setText("Administration Infos");
+        cbox2.setText("Administration Info");
+        cbox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbox2ActionPerformed(evt);
+            }
+        });
 
-        cbox3.setText("Employee Infos");
+        cbox3.setText("Employee Info");
+        cbox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbox3ActionPerformed(evt);
+            }
+        });
 
+        jLabel1.setBackground(new java.awt.Color(245, 245, 245));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("SELECT THE DATA ");
+        jLabel1.setText("SELECT DATA ");
 
+        jButton1.setBackground(new java.awt.Color(0, 102, 153));
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("DISPLAY");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,11 +86,11 @@ public class CompanyInfos extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(cbox1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                        .addComponent(cbox1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
                         .addComponent(cbox2, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cbox3, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(cbox3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -86,7 +102,7 @@ public class CompanyInfos extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cbox1)
+                    .addComponent(cbox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(cbox2)
                     .addComponent(cbox3))
                 .addGap(18, 18, 18)
@@ -203,6 +219,14 @@ public class CompanyInfos extends javax.swing.JFrame {
         }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void cbox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbox2ActionPerformed
+
+    private void cbox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbox3ActionPerformed
 
     /**
      * @param args the command line arguments

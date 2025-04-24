@@ -40,7 +40,7 @@ public class StartFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Enter Your Infos:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 10), new java.awt.Color(0, 102, 153))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Enter Your Info:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 102, 153))); // NOI18N
         jPanel2.setForeground(new java.awt.Color(255, 204, 102));
         jPanel2.setToolTipText("");
 
@@ -85,7 +85,7 @@ public class StartFrame extends javax.swing.JFrame {
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(110, Short.MAX_VALUE)
+                .addContainerGap(112, Short.MAX_VALUE)
                 .addComponent(enterscreen_button, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(102, 102, 102))
         );
@@ -134,6 +134,8 @@ public class StartFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel2.getAccessibleContext().setAccessibleName("Enter Your Info:");
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
     private void enterscreen_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterscreen_buttonActionPerformed
@@ -142,7 +144,7 @@ public class StartFrame extends javax.swing.JFrame {
         //şifre ve id kontrolü yaparak sisteme girişi gerçekleştirir
         if(ID_text.getText().equals("") || password_text.getText().equals("")){
             jLabel2.setText("Enter a ID number and password!!!");
-        }else if(Integer.valueOf(ID_text.getText())>=14000 || Integer.valueOf(ID_text.getText())<11000 ){
+        }else if (Integer.valueOf(ID_text.getText())>=14000 || Integer.valueOf(ID_text.getText())<11000 ){
             jLabel2.setText("Invalid ID number!!!");
             ID_text.setText("");
             password_text.setText("");

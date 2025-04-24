@@ -1,20 +1,22 @@
-12000	Merve	f	48	bilişim	8856	1000	0
-12001	Aslı	g	32	üretim	8951	1001	1
-12002	Ufuk	h	28	üretim	7959	1003	2
-12003	Kadir	k	53	bilişim	5213	1002	3
-13001	Murat	i	28	test	6753	1002	4
-13002	Beyza	l	36	bilişim	7123	1002	5
-13003	Efe	m	32	test	5891	1000	6
-13004	Kübra	n	29	üretim	6546	1000	7
-13005	Fatih	t	30	test	7005	1001	8
-13006	Kerim	s	41	üretim	7564	1001	9
-13007	Sıla	y	35	bilişim	6943	1003	10
-13008	Dilan	z	45	üretim	5963	1003	11
-13009	Emre	x	35	üretim	7591	-	12
-12130	Dilara	Patır	28	bilişim	12000	1004	574
-12964	ceyda	patır	23	bilişim	5000.0	-	18
-13828	zeynep	doğan	34	Bilişim	3000.0	-	904
-13365	Ahmet	Uyan	54	Tasarım	4500.0	-	907
-13255	Ahmet	Yılmaz	54	Üretim	4500.0	1004	956
-13145	Canan	Öztürk	44	Üretim	4500.0	1004	954
-13348	Mesut	Yılmaz	45	Bilişim	3000.0	-	683
+12000	Samuel	F.	48	Jr. Employee	60000	1007	0
+12001	Ashley	B.	32	Jr. Employee	60000	-	1
+12002	Richard	Y.	28	Employee	50000	1006	2
+12003	Michael	B.	53	Sr. Partner	100000	-	3
+12004	Nancy	L.	28	Sr. Employee	75000	-	4
+12005	Brooke	P.	27	Jr. Employee	60000	-	5
+12006	Josh	U.	32	Employee	45000	1005	6
+12007	Daniel	O.	29	Employee	45000	-	7
+12008	Shannon	W.	30	Jr. Employee	60000	-	8
+12009	Mike	R.	30	Employee	35000	-	9
+12010	Walter	W.	52	Employee	35000	-	10
+12011	Harvey	S.	45	Sr. Employee	65000	-	11
+12012	Gale	B.	35	Employee	35000	-	12
+12013	Donald	T.	79	Employee	35000	-	574
+12014	Donna	P.	23	Sr. Employee	70000	-	18
+12015	Jesse	P.	34	Employee	45000	-	904
+12016	Rachel	Z.	54	Employee	45000	1111	907
+12017	Sheldon	C.	54	Employee	45000	1112	956
+12018	Michael	E.	61	Employee	45000	-	954
+12019	George	C.	45	Jr. Employee	60000	-	683
+12020	Toby	B.	20	Employee	45000	10080	546
+12021	Jacob	B.	20	Management	80000	-	700
